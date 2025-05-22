@@ -1,0 +1,64 @@
+<!-- /webinar-form.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نموذج تسجيل الندوة</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: rtl;
+      text-align: right;
+      padding: 2rem;
+      background-color: #f9f9f9;
+    }
+    form {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 1.5rem;
+      padding: 0.5rem 1.5rem;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="submit.php" method="POST" accept-charset="UTF-8">
+    <h2>تسجيل الندوة</h2>
+
+    <label for="fullname">الاسم الكامل:</label>
+    <input type="text" name="fullname" id="fullname" required>
+
+    <label for="email">البريد الإلكتروني:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="mobile">رقم الجوال:</label>
+    <input type="text" name="mobile" id="mobile" required>
+
+    <button type="submit">إرسال</button>
+  </form>
+
+</body>
+</html>
